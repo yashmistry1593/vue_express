@@ -6,6 +6,7 @@ const app = express();
 
 app.use(bodyParser());
 app.use(cors());
+
 // Connect to database
 const URI =
   "mongodb+srv://yash123:yash123@cluster0.s3f5e.mongodb.net/vue_express?retryWrites=true&w=majority";
