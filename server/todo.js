@@ -84,8 +84,7 @@ app.get("/todo/findAll", (req, res) => {
       console.log("Data retrived from database");
       console.log(data);
 
-      // res.end(JSON.stringify({ todoList: data }));
-      res.jsonp({ todoList: data });
+      res.end(JSON.stringify({ todoList: data }));
     }
   });
 });
