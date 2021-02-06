@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -27,31 +23,23 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn
-       to="/"
-        text
-      >
+      <v-btn to="/" text>
         <span class="mr-2">Home</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
-       <v-btn
-       to="/elastic"
-        text
-      >
+      <v-btn to="/todo" text>
+        <span class="mr-2">Todo App</span>
+        <v-icon>mdi-basket</v-icon>
+      </v-btn>
+      <v-btn to="/elastic" text>
         <span class="mr-2">Elastic</span>
       </v-btn>
-    
-       <v-btn
-       to="/profile"
-        text
-      >
+
+      <v-btn to="/profile" text>
         <span class="mr-2">Profile</span>
       </v-btn>
 
-      <v-btn
-       to="/about"
-        text
-      >
+      <v-btn to="/about" text>
         <span class="mr-2">About</span>
         <v-icon>mdi-about</v-icon>
       </v-btn>
@@ -67,10 +55,10 @@
 //import HelloWorld from './components/HelloWorld';
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-  //  HelloWorld,
+    //  HelloWorld,
   },
 
   data: () => ({

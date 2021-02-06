@@ -3,15 +3,15 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
+require("dotenv/config");
 
 app.use(bodyParser());
 app.use(cors());
 
 // Connect to database
-const URI =
-  "mongodb+srv://yash123:yash123@cluster0.s3f5e.mongodb.net/vue_express?retryWrites=true&w=majority";
+
 mongoose.connect(
-  URI,
+  process.env.DB_CONNECTION_URI,
   {
     useNewUrlParser: true,
   },
@@ -60,6 +60,7 @@ app.post("/todo/add", (req, res) => {
 });
 
 app.get("/todo/remove/:id", (req, res) => {
+  console.log("rer :", req);
   const id = req.params.id;
   console.log(id);
 
