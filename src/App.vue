@@ -28,9 +28,14 @@
         <v-icon>mdi-home</v-icon>
       </v-btn>
       <v-btn to="/todo" text>
-        <span class="mr-2">Todo App</span>
+        <span class="mr-2">Todo App (Mongo DB)</span>
         <v-icon>mdi-basket</v-icon>
       </v-btn>
+      <v-btn to="/todoDynamo" text>
+        <span class="mr-2">Todo App(Dynamo DB)</span>
+        <v-icon>mdi-basket</v-icon>
+      </v-btn>
+
       <v-btn to="/elastic" text>
         <span class="mr-2">Elastic</span>
       </v-btn>

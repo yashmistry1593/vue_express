@@ -7,6 +7,7 @@ import missing from "../views/404.vue";
 import Info from "../views/Info.vue";
 import Contact from "../views/Contact.vue";
 import Todo from "../views/Todo.vue";
+import TodoDyanmo from "../views/TodoDynamo.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ const routes = [
     path: "/todo",
     name: "Todo",
     component: Todo,
+  },
+  {
+    path: "/todoDynamo",
+    name: "TodoDynamo",
+    component: TodoDyanmo,
   },
   {
     path: "/profile",
